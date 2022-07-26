@@ -1,7 +1,7 @@
-import React from "react";
+import Tour from "./Tour";
 
-const Tours = () => {
-  return <div>Tours</div>;
+const Tours = ({ tours }) => {
+  return <section>Tours</section>;
 };
 
 export default Tours;
