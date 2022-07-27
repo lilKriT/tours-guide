@@ -39,6 +39,17 @@ function App() {
       </main>
     );
   }
+
+  if (tours.length === 0) {
+    return (
+      <main>
+        <h2>No tours left</h2>
+        <button onClick={fetchTours} className="btn">
+          Refresh
+        </button>
+      </main>
+    );
+  }
   return (
     <main>
       <Tours tours={tours} removeTour={removeTour} />
