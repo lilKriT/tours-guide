@@ -23,6 +23,11 @@ function App() {
     console.log(tours);
   };
 
+  const removeTours = (id) => {
+    const newTours = tours.filter((tour) => tour.id !== id);
+    setTours(newTours);
+  };
+
   useEffect(() => {
     fetchTours();
   }, []);
